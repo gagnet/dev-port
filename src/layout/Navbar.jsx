@@ -25,7 +25,7 @@ export const Navbar = ()=>{
                 </div>
             </div>
             <div>
-                <Button size="sm">Contact Me</Button>
+                <Button size="sm">Contact Meee</Button>
             </div>
         </nav>
     </header>
