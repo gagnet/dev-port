@@ -30,9 +30,9 @@
   }
 
   .glass-strong {
-    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    background-color: color-mix(in srgb, #222d35ff 80%, transparent);
     backdrop-filter: blur(24px);
-    border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+    border: 1px solid color-mix(in srgb, #242b32 60%, transparent);
   }
 
   .glow-text {
