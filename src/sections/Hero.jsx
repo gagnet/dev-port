@@ -1,6 +1,24 @@
-import { ArrowBigRight, ArrowRight, Download, Github, Linkedin } from "lucide-react"
+import { ArrowBigRight, ArrowRight, Download, Github, Linkedin, ChevronDown } from "lucide-react"
 import { Button } from "../components/Button"
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
+
+const skillz = [
+   "React",
+   "React Native",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "GraphQL",
+  "PostgreSQL",
+  "Tailwind CSS",
+  "Prisma",
+  "Jest",
+  "Cypress",
+  "Figma",
+  "Git",
+  "GitHub Actions",
+]
+
 
 export const Hero  = ()=>{
     return (
@@ -45,20 +63,19 @@ export const Hero  = ()=>{
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Clever Girl. 
                 <br></br> <span className="text-[#20b2a6] glow-text">Crafted </span>
-                work. Made with 
-                <span className="font-serif italic font-normal text-white"> -precision
+                work. Made with -
+                <span className="font-serif italic font-normal text-white"> good vibes
                 </span>
                 <br />
-                and
+                but not
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  creativity. 
+                  vibe coded. 
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                 Hi, I'm Tim Gagne — a software engineer specializing in
-                React, React Native, Next.js, and TypeScript. I build web
-                applications that make me happy. Take a look!
+                React, React Native, Next.js, and TypeScript. I build things that make me happy. Take a look!
               </p>
             </div>
             {/* interaction */}
@@ -86,17 +103,61 @@ export const Hero  = ()=>{
                 </a>
               ))}
             </div>
-          </div>
+          </div> 
           {/* right column - pic */}
-          <div>
+          <div className="relative animate-fade-in animation-delay-300">
             {/* profile pic */}
-            <div>
+            <div className="relative max-w-md mx-auto ">
+             <div
+                className="absolute inset-0 
+              rounded-3xl bg-gradient-to-br 
+              from-color-#20b2a6/30 via-transparent 
+              to-color-#20b2a6/10 blur-2xl animate-pulse"
+              />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img src="/raptor.png" alt="Tim Gagne"  className="w-full aspect-[4/5] object-cover rounded-2xl"/>
+                {/* Floating guy */}
+                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
+                  <span className="text-sm font-medium">Available for work</span>
+                </div>
+                </div>
+                {/* stats baby */}
+                  <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                  <div className="text-2xl font-bold text-[#20b2a6]">3+</div>
+                  <div className="text-xs text-[#7a8491]">
+                    Years Exp.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        {/* skillz */}
+        <div className="mt-20 animate-fade-in animation-delay-600">
+          <p className="text-sm text-[#7a8491] mb-6 text-center">Technologies I work with:</p>
+        <div className="relative overflow-hidden">
+          <div className="flex animate-marquee">
+          {[...skillz, ...skillz].map((skill, idx)=>(
+            <div key={idx} className="flex-shrink-0 px-8 py-16">
+            <span className="text-xl font-semibold text-[#7a8491]/50 hover:text-[#7a8491] transition-colors">{skill}</span>
+            </div>
+          ))}</div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 
+      animate-fade-in animation-delay-800"
+      >
+        <a
+          href="#about"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+        >
+          <span className="text-xs uppercase tracking-wider">Scroll</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </a>
       </div>
     </section>)
 }

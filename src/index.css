@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -20,6 +18,10 @@
   .font-serif {
     font-family: "Playfair Display", serif;
   }
+
+  .theme {
+        color: '#20b2a6',    
+  }
 }
 
 @layer components {
@@ -37,13 +39,13 @@
 
   .glow-text {
     text-shadow: 0 0 30px
-      color-mix(in srgb, var(--color-primary) 50%, transparent);
+      color-mix(in srgb, var(#20b2a6) 50%, transparent);
   }
 
   .glow-border {
     box-shadow: 0 0 20px
-        color-mix(in srgb, var(--color-primary) 20%, transparent),
-      inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
+        color-mix(in srgb, #20b2a6 40%, transparent),
+      inset 0 0 20px color-mix(in srgb, #20b2a6 5%, transparent);
   }
 }
 
