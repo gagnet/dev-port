@@ -34,7 +34,7 @@ export const About = () => {
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="text-[#2e6de1ff] text-sm font-medium tracking-wider uppercase">
+              <span className="text-[#81acf3ff] text-sm font-medium tracking-wider uppercase">
                 About Me
               </span>
             </div>
@@ -65,7 +65,7 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+            <div className="glass rounded-2xl p-6 glow-border[#81acf3ff] animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-[#f0f2f5]">
                 "My mission is to create accessable work that is not just
                 functional, but user friendly — basically, products that users love to
@@ -82,7 +82,7 @@ export const About = () => {
                 className="glass p-6 rounded-2xl animate-fade-in"
                 style={{ animationDelay: `${(idx + 1) * 100}ms` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-[#578ef4ff]/10 flex items-center justify-center mb-4 hover:bg-[#3e74d7ff]/20">
+                <div className="w-12 h-12 rounded-xl bg-[#578ef4ff]/10 flex items-center justify-center mb-4 hover:bg-[#81acf3ff]/20">
                   <item.icon className="w-6 h-6 text-[#578ef4ff]" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>

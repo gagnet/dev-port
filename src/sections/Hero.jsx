@@ -26,7 +26,7 @@ export const Hero  = ()=>{
       {/* background */}
       <div className="absolute inset-0">
         <img
-          src="/back-img.png"
+          src="/background-blue.jpeg"
           alt="Hero image" 
           className="w-full h-full object-cover opacity-40"
         />
