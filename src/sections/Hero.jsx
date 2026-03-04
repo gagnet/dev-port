@@ -53,8 +53,8 @@ export const Hero  = ()=>{
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[#20b2a6]">
-                <span className="w-2 h-2 bg-[#20b2a6] rounded-full animate-pulse" />
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[#5981caff]">
+                <span className="w-2 h-2 bg-[#578ef4ff] rounded-full animate-pulse" />
                 Software Engineer • React Specialist
               </span>
             </div>
@@ -62,7 +62,7 @@ export const Hero  = ()=>{
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Clever Girl. 
-                <br></br> <span className="text-[#20b2a6] glow-text">Crafted </span>
+                <br></br> <span className="text-[#578ef4ff] glow-text">Crafted </span>
                 work. Made with -
                 <span className="font-serif italic font-normal text-white"> good vibes
                 </span>
@@ -81,10 +81,12 @@ export const Hero  = ()=>{
             {/* interaction */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">Contact Me <ArrowRight className="w-6 h-6" /></Button>
-            <AnimatedBorderButton>
+           <a href="/Mobile-Resume.pdf" download>
+              <AnimatedBorderButton>
               <Download className="w-6 h-6" />
               Download Resume
-            </AnimatedBorderButton>
+              </AnimatedBorderButton>
+          </a>
             </div>
             {/* socials */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
@@ -97,7 +99,7 @@ export const Hero  = ()=>{
                 <a
                   key={idx}
                   href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  className="p-2 rounded-full glass hover:bg-[#578ef4ff]/10 hover:text-[#578ef4ff] transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
                 </a>
@@ -111,11 +113,11 @@ export const Hero  = ()=>{
              <div
                 className="absolute inset-0 
               rounded-3xl bg-gradient-to-br 
-              from-color-#20b2a6/30 via-transparent 
-              to-color-#20b2a6/10 blur-2xl animate-pulse"
+              from-color-#578ef4ff/30 via-transparent 
+              to-color-#578ef4ff/10 blur-2xl animate-pulse"
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
-                <img src="/raptor.png" alt="Tim Gagne"  className="w-full aspect-[4/5] object-cover rounded-2xl"/>
+                <img src="/NY-TG-2.jpg" alt="Tim Gagne"  className="w-full aspect-[4/5] object-cover rounded-2xl"/>
                 {/* Floating guy */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                 <div className="flex items-center gap-3">
@@ -125,7 +127,7 @@ export const Hero  = ()=>{
                 </div>
                 {/* stats baby */}
                   <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-[#20b2a6]">3+</div>
+                  <div className="text-2xl font-bold text-[#578ef4ff]">3+</div>
                   <div className="text-xs text-[#7a8491]">
                     Years Exp.
                   </div>

@@ -6,14 +6,19 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#contact", label: "Contact" },
 ]
 export const Navbar = ()=>{
     const [isMobileOpen, setIsMobileOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
-    const clicky = ()=>{
-        console.log("clicked")
-      }
+   const scrollToContact = () => {
+    document.querySelector("#contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+    setIsMobileOpen(false); 
+  }
 
     useEffect(()=>{
       const handleScroll = () =>{
@@ -31,8 +36,8 @@ export const Navbar = ()=>{
         isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
       }  z-50`}>
         <nav className="container mx-auto px-6 flex items-center justify-between">
-            <a href="#" className="text-xl font-bold tracking-tight hover:text-[#20b2a6]">
-               TG<span className="text-[#20b2a6]">.</span> 
+            <a href="#" className="text-xl font-bold tracking-tight hover:text-[#578ef4ff]">
+               TG<span className="text-[#2e6de1ff]">.</span> 
             </a>
             {/*Desktop Nav */}
             <div className="hidden md:flex items-center gap-1">
@@ -48,7 +53,7 @@ export const Navbar = ()=>{
             </div>
                 {/* CTA Button */}
             <div className="hidden md:block">
-                <Button size="sm" onClick={clicky}>Contact Me</Button>
+                <Button size="sm" onClick={scrollToContact}>Contact Me</Button>
             </div>
             {/* Mobile Menu Button */}
             <button className="md:hidden p-2 text-[#f0f2f5] cursor-pointer" onClick={()=> setIsMobileOpen(!isMobileOpen)}>
@@ -71,7 +76,7 @@ export const Navbar = ()=>{
               </a>
             ))}
 
-            <Button className="inline-flex items-center justify-center" onClick={() => console.log("click")}>
+            <Button className="inline-flex items-center justify-center" onClick={scrollToContact}>
               Contact Me
             </Button>
           </div>

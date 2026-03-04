@@ -21,6 +21,7 @@ export default defineConfig({
         foreground: '#f0f2f5',
         card: '#141a1f',
         primary: '#20b2a6',
+        primary2: '#578ef4ff',
         'primary-foreground': '#ffffff',
         secondary: '#1f2830',
         'secondary-foreground': '#20b2a6',

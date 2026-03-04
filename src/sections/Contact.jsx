@@ -93,13 +93,13 @@ export const Contact = ()=>{
 
     return <section id="contact" className="py-32 relative overflow-hidden">
      <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#20b2a6]/5 rounded-full blur-3xl" />
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#3e74d7ff]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#f5a623]/5 rounded-full blur-3xl" />
 </div>
 <div className="container mx-auto px-6 relative z-10">
   {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[#20b2a6] text-sm font-medium tracking-wider uppercase animate-fade-in">
+          <span className="text-[#3e74d7ff] text-sm font-medium tracking-wider uppercase animate-fade-in">
             Talk to me
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
@@ -121,7 +121,7 @@ export const Contact = ()=>{
                         <input id="name" type="text" required placeholder="Your name..." 
                           value={formData.name}
                           onChange={(e) => setFormData({...formData, name: e.target.value})}
-                          className="w-full px-4 py-3 bg-[#222d35ff] rounded-xl border border-[#242b32] focus:border-[#20b2a6] focus:ring-1 focus:ring-[#20b2a6] outline-none transition-all"
+                          className="w-full px-4 py-3 bg-[#222d35ff] rounded-xl border border-[#242b32] focus:border-[#3e74d7ff] focus:ring-1 focus:ring-[#3e74d7ff] outline-none transition-all"
                         />
                         
                     </div>
@@ -130,7 +130,7 @@ export const Contact = ()=>{
                         <input id="email" type="email" required placeholder="email@email.com"
                           value={formData.email}
                           onChange={(e) => setFormData({...formData,email: e.target.value})}
-                          className="w-full px-4 py-3 bg-[#222d35ff] rounded-xl border border-[#242b32] focus:border-[#20b2a6] focus:ring-1 focus:ring-[#20b2a6] outline-none transition-all"
+                          className="w-full px-4 py-3 bg-[#222d35ff] rounded-xl border border-[#242b32] focus:border-[#3e74d7ff] focus:ring-1 focus:ring-[#3e74d7ff] outline-none transition-all"
                         />
                     </div>
                     <div>
@@ -139,7 +139,7 @@ export const Contact = ()=>{
                           required
                           value={formData.message}
                           onChange={(e) => setFormData({...formData, message: e.target.value})}
-                          className="w-full px-4 py-3 bg-[#222d35ff] rounded-xl border border-[#242b32] focus:border-[#20b2a6] focus:ring-1 focus:ring-[#20b2a6] outline-none transition-all resize-none"
+                          className="w-full px-4 py-3 bg-[#222d35ff] rounded-xl border border-[#242b32] focus:border-[#3e74d7ff] focus:ring-1 focus:ring-[#3e74d7ff] outline-none transition-all resize-none"
                         />
                     </div>
                     <Button
