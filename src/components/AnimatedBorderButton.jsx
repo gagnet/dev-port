@@ -1,7 +1,7 @@
 export const AnimatedBorderButton =({children})=>{
 return(
    <button className="relative bg-transparent border border-border 
-        text-foreground hover:border-[#20b2a6]/50 transition-all 
+        text-foreground hover:border-[#578ef4ff]/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
         focus-visible:ring-primary focus-visible:ring-offset-2 
         disabled:opacity-50 disabled:cursor-not-allowed group 
@@ -16,7 +16,7 @@ return(
         <path
           d="M 30,1 A 29,29 0 0 0 1,30 L 1,30 A 29,29 0 0 0 30,59 L 170,59 A 29,29 0 0 0 199,30 L 199,30 A 29,29 0 0 0 170,1 Z"
           fill="none"
-          stroke="var(#20b2a6)"
+          stroke="var(#578ef4ff)"
           strokeWidth="2"
           strokeDasharray="400 550"
           strokeDashoffset="400"

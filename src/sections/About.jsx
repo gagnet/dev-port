@@ -39,7 +39,7 @@ export const About = () => {
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-[#3e74d7ff]">
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-[#578ef4ff]">
               Not your average engineer
               <span className="font-serif italic font-normal text-white">
                 {" "}
@@ -82,8 +82,8 @@ export const About = () => {
                 className="glass p-6 rounded-2xl animate-fade-in"
                 style={{ animationDelay: `${(idx + 1) * 100}ms` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-[#3e74d7ff]/10 flex items-center justify-center mb-4 hover:bg-[#3e74d7ff]/20">
-                  <item.icon className="w-6 h-6 text-[#3e74d7ff]" />
+                <div className="w-12 h-12 rounded-xl bg-[#578ef4ff]/10 flex items-center justify-center mb-4 hover:bg-[#3e74d7ff]/20">
+                  <item.icon className="w-6 h-6 text-[#578ef4ff]" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-[#7a8491]">

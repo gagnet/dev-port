@@ -61,8 +61,8 @@ export const Hero  = ()=>{
             {/* main text */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Clever Girl. 
-                <br></br> <span className="text-[#578ef4ff] glow-text">Crafted </span>
+                Hello, there...
+                <br></br> <span className="text-[#447eeaff] glow-text">Crafted </span>
                 work. Made with -
                 <span className="font-serif italic font-normal text-white"> good vibes
                 </span>

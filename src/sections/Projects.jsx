@@ -25,7 +25,7 @@ const projects = [
 export const Projects  = ()=>{
     return <section id="projects" className="py-32 relative overflow-hidden">
         <div className="text-center mx-auto max-w-3xl mb-16">
-          <span className="text-[#20b2a6] text-sm font-medium tracking-wider uppercase animate-fade-in">
+          <span className="text-[#578ef4ff] text-sm font-medium tracking-wider uppercase animate-fade-in">
             Featured Work
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-white">
@@ -35,7 +35,7 @@ export const Projects  = ()=>{
               could AI do that?
             </span>
           </h2>
-          <p className="text-[#20b2a6] animate-fade-in animation-delay-200">
+          <p className="text-[#578ef4ff] animate-fade-in animation-delay-200">
             Looky what I made:
           </p>
         </div>
@@ -57,13 +57,13 @@ export const Projects  = ()=>{
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
-                    className="p-3 rounded-full glass hover:bg-[#20b2a6] hover:text-[#ffffff] transition-all"
+                    className="p-3 rounded-full glass hover:bg-[#578ef4ff] hover:text-[#ffffff] transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
-                    className="p-3 rounded-full glass hover:bg-[#20b2a6] hover:text-[#ffffff] transition-all"
+                    className="p-3 rounded-full glass hover:bg-[#578ef4ff] hover:text-[#ffffff] transition-all"
                   >
                     <Github className="w-5 h-5" />
                   </a>
@@ -71,14 +71,14 @@ export const Projects  = ()=>{
         </div>
         <div className="p-6 space-y-4">
           <div className="flex items-start justify-between">
-            <h3 className="text-xl font-semibold group-hover:text-[#20b2a6] transition-colors">{project.title}</h3>
+            <h3 className="text-xl font-semibold group-hover:text-[#578ef4ff] transition-colors">{project.title}</h3>
           </div>
           <p className="text-[#7a8491] text-sm">{project.description}</p>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag, tadIdx)=>(
               <span key={tadIdx}
               className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-[#242b32]/50 text-[#7a8491]
-              hover:border-[#20b2a6']/50 hover:text-[#20b2a6'] transition-all duration-300"
+              hover:border-[#578ef4ff]/50 hover:text-[#578ef4ff] transition-all duration-300"
               >{tag}</span>
             ))}
           </div>
