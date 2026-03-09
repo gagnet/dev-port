@@ -20,7 +20,7 @@ export default defineConfig({
         background: '#0f1418',
         foreground: '#f0f2f5',
         card: '#141a1f',
-        primary: '#20b2a6',
+        primary: '#81acf3ff',
         primary2: '#578ef4ff',
         'primary-foreground': '#ffffff',
         secondary: '#1f2830',

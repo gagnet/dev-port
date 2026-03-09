@@ -57,7 +57,7 @@ export const Navbar = ()=>{
             </div>
             {/* Mobile Menu Button */}
             <button className="md:hidden p-2 text-[#f0f2f5] cursor-pointer" onClick={()=> setIsMobileOpen(!isMobileOpen)}>
-                {isMobileOpen ? <Menu className="bg-[#41464dff] p-1" size={24} /> : <Menu size={24  }/>}
+                {isMobileOpen ? <Menu className="bg-[#578ef4ff] p-1" size={24} /> : <Menu size={24  }/>}
             </button>
         </nav>
 

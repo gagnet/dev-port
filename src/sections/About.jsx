@@ -65,7 +65,7 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="glass rounded-2xl p-6 glow-border[#81acf3ff] animate-fade-in animation-delay-300">
+            <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-[#f0f2f5]">
                 "My mission is to create accessable work that is not just
                 functional, but user friendly — basically, products that users love to
